@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 title">
+      <h1>@Input + @Output + EventEmitter</h1>
+      <h1>Pass value between components</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 content">
+      <app-input-output-child [initialcounter]="initialcounter" (counterChange)="onCounterChange($event)">
+      </app-input-output-child>
+      <h2>Counter : {{counter}}</h2>
+    </div>
+  </div>
+</div>
+

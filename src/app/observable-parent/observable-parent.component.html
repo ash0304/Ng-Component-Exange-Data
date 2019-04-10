@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 title">
+      <h1>Observable Data Service</h1>
+      <h1>Pass value between components</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 content">
+      <div class="btn-area">
+        <button class="btn btn-primary" (click)="plus()">+</button>
+        &nbsp;
+        <button class="btn btn-secondary" (click)="minus()">-</button>
+      </div>
+      <!-- 將初始值傳入子組件 -->
+      <app-observable-child [initialcounter]="initialcounter"></app-observable-child>
+    </div>
+  </div>
+</div>

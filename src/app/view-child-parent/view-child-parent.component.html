@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 title">
+      <h1>@ViewChild</h1>
+      <h1>Pass value between components</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 content">
+      <div class="btn-area">
+        <button class="btn btn-info" (click)="parentPlus()" >+</button>
+        &nbsp;
+        <button class="btn btn-warning" (click)="parentMinus()">-</button>
+      </div>
+      <app-view-child-child [initialcounter]="initialcounter"></app-view-child-child>
+    </div>
+  </div>
+</div>
+
+
+
